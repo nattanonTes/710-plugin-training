@@ -1,0 +1,36 @@
+<section class="settings">
+  <h2 class="settings-heading">Settings for ohm_plugin</h2>
+  <p class="kintoneplugin-desc">Choose highlight color and highlight condition!</p>
+  <p class="kintoneplugin-desc" style="color: red;">*Only works with number fields</p>
+  <form class="js-submit-settings">
+    <p class="kintoneplugin-row">
+      <label for="chooseColor">
+        Target field : 
+        <select name="" id="targetField" class="kintoneplugin-dropdown"></select>
+      </label>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="chooseColor">
+        Color : 
+        <input type="text" id="color" class="js-text-message kintoneplugin-input-text">
+      </label>
+      <p class="kintoneplugin-desc">ex. red , #fffff</p>
+    </p>
+    <p class="kintoneplugin-row">
+      
+      <label for="chooseCondition">
+        highlight when value is 
+        <select name="" id="selectComp" class="kintoneplugin-dropdown">
+          <option value="greater" selected>greater than</option>
+          <option value="lesser">lesser than</option>
+          <option value="equal">equals to</option>
+        </select>
+        <input type="number" id="exceed" class="js-text-message kintoneplugin-input-text">
+      </label>
+    </p>
+    <p class="kintoneplugin-row">
+        <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">Cancel</button>
+        <button class="kintoneplugin-button-dialog-ok">Save</button>
+    </p>
+  </form>
+</section>
